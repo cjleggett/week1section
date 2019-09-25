@@ -41,7 +41,7 @@ int main(void)
     // printarr(a2);
     // printf("\n");
 
-    // Uncomment to test the bubble sort:
+    // Uncomment to test the selection sort:
     // int a3[] = {2, 4, 65, 12, 4};
     // int a4[] = {1, 4, -3, 0, 0};
     // printf("selection(");
@@ -91,9 +91,7 @@ int factorial(int n)
 // function to take in n and return the nth fibonacci number
 int fibonacci(int n)
 {
-    if (n == 0)
-        return 0;
-    if (n == 1)
+    if (n == 0 || n == 1)
         return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
